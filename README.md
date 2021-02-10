@@ -33,20 +33,20 @@ Collaborators: Laura, @Cyd-Styles, @y3pio
 
 ### Goal 1: Render the answer choices from sample_data.json on the screen.
 
-- [ ] In App.jsx, create an Answer component.
-- [ ] Render an instance of `<Answer />` inside of `<Question />`.
-- [ ] Add props to `<Answer />` with the text "Answer goes here".
-  - [ ] Pass props for the answer choices into `<Question />`.
-  - [ ] Use those props to render the Answer components inside `<Question />` to display the answer choices.
-- [ ] Refactor to use map to map over all answer choices.
+- [X] In App.jsx, create an Answer component.
+- [X] Render an instance of `<Answer />` inside of `<Question />`.
+- [X] Add props to `<Answer />` with the text "Answer goes here".
+  - [X] Pass props for the answer choices into `<Question />`.
+  - [X] Use those props to render the Answer components inside `<Question />` to display the answer choices.
+- [X] Refactor to use map to map over all answer choices.
 
 > ![Day 2.0 goal](https://i.imgur.com/VpA8eRc.png)
 
 ### Goal 2: Render a button on the screen that reveals the correct answer when clicked.
 
-- [ ] Using `useState` in `<App />`, create a boolean state variable called `isAnswered` to keep track of whether the correct answer is revealed.
-- [ ] Add a button to the App component that will update the state to display the correct answer when it is clicked.
-- [ ] Create an onClick function that sets the state to display the correct answer choice when your button is clicked.
+- [X] Using `useState` in `<App />`, create a boolean state variable called `isAnswered` to keep track of whether the correct answer is revealed.
+- [X] Add a button to the App component that will update the state to display the correct answer when it is clicked.
+- [X] Create an onClick function that sets the state to display the correct answer choice when your button is clicked.
 
 > ![Day 2.5 goal - unanswered](https://i.imgur.com/JI6GroE.png) >![Day 2.5 goal - answered](https://i.imgur.com/rufYX84.png)
 
