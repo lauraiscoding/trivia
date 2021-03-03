@@ -30,6 +30,14 @@
       "text": "What does JS in ReactJS stand for?",
       "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
     }
+  },
+  {
+    "question": {
+      "choices": ["Just Saying", "JS", "JavaScript", "Joe Small"],
+      "correct_choice_index": 2,
+      "text": "What does JS in ReactJS stand for?",
+      "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
+    }
   }
 
 ]
