@@ -28,19 +28,25 @@ function App() {
   // const {name, setName} = useState(initialValue)
   const [questionNumber, setQuestionNumber] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState(null);
+  const [userAnswer, setUserAnswer] = useState(null);
+  
 
-  //
-  // data = [ {.....}, {......}, .....]
-  // data.map(element => <Question text={element.question.text} choice={element.question.choices} answer={} />);
   return (
     <div className="app">
-      <div>Question #: {questionNumber}</div>
+     <div> {userAnswer === data[questionNumber].question.correct_choice_index ?
+        "Your answer is correct!"
+          : userAnswer !== null ?
+           "Wrong answer! Click the button if you want the correct answer"
+          : ""
+    } </div>
+      
       <Question
         text={data[questionNumber].question.text}
         choice={data[questionNumber].question.choices}
         answer={data[questionNumber].question.correct_choice_index}
         setCorrectAnswer={setCorrectAnswer}
         correctAnswer={correctAnswer}
+        setUserAnswer={setUserAnswer}
       />
       {/* {data.map((element) => (
         <Question
@@ -71,13 +77,13 @@ export default App;
 - [X] BONUS: Add [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to hide `<NextQuestion />` when there are no more next questions.
 
 Goal 2, day 3
-- [ ] Using `useState` in `<App />`, create a state variable to keep track of which answer choice the user clicks.
-  - [ ] Inside the map function for the Answer components, add an event handler that updates the state to be the choice that the user clicks.
-  - [ ] HINT: Use props to pass down the state from `<App />`.
-  - [ ] HINT: Don't forget to pass your `onClick` down as a prop as well.
-- [ ] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
-  - [ ] Display text on the screen telling the user if their answer choice was correct.
-  - [ ] Display text on the screen telling the user what the correct answer was.
+- [X] Using `useState` in `<App />`, create a state variable to keep track of which answer choice the user clicks.
+  - [X] Inside the map function for the Answer components, add an event handler that updates the state to be the choice that the user clicks.
+  - [X] HINT: Use props to pass down the state from `<App />`.
+  - [X] HINT: Don't forget to pass your `onClick` down as a prop as well.
+- [X] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
+  - [X] Display text on the screen telling the user if their answer choice was correct.
+  - [X] Display text on the screen telling the user what the correct answer was.
   - [ ] HINT: To do this, you should create a variable and display that variable inside your return statement.
   - [ ] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
 

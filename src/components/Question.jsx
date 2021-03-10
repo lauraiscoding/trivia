@@ -6,7 +6,8 @@ function Question(props) {
   return (
     <div>
       {props.text}
-      <Answer choice={props.choice} />
+      <Answer 
+    choice={props.choice} setUserAnswer={props.setUserAnswer}/>
       <button
         onClick={() => {
           props.setCorrectAnswer(props.choice[props.answer]);

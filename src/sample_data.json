@@ -17,9 +17,9 @@
   },
   {
     "question": {
-      "choices": ["PopCode", "ScriptEd", "CodeUSA", "CodeEd"],
-      "correct_choice_index": 1,
-      "text": "Insert trivia question here",
+      "choices": ["Arizona", "Delaware", "Nevada", "Wisconsin"],
+      "correct_choice_index": 2,
+      "text": "In what state is Area 51 located?",
       "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
     }
   },
@@ -33,9 +33,9 @@
   },
   {
     "question": {
-      "choices": ["Just Saying", "JS", "JavaScript", "Joe Small"],
-      "correct_choice_index": 2,
-      "text": "What does JS in ReactJS stand for?",
+      "choices": ["A state", "The name of several cities", "A river", "All of the above"],
+      "correct_choice_index": 3,
+      "text": "Delaware is...",
       "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
     }
   }

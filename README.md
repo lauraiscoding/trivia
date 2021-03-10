@@ -54,34 +54,34 @@ Collaborators: Laura, @Cyd-Styles, @y3pio
 
 ### Goal 1: Add functionality to your "Next Question" button so that it renders the next question when clicked.
 
-- [ ] Add state to `<App />` using the `useState` React hook to keep track of the current question number.
-  - [ ] Replace the current question number variable that you wrote in Day 1.
-- [ ] Create a function that updates the state to the next question number.
-- [ ] Make a prop on `<NextQuestion />` to pass the prop down to the button element to call that function when the button is clicked.
-- [ ] Check that every part of your question and answer updates to reflect the current question number.
-- [ ] Reset the state of `isAnswered` when the Next Question button is clicked so the correct answer stops being displayed.
-- [ ] BONUS: Add [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to hide `<NextQuestion />` when there are no more next questions.
+- [X] Add state to `<App />` using the `useState` React hook to keep track of the current question number.
+  - [X] Replace the current question number variable that you wrote in Day 1.
+- [X] Create a function that updates the state to the next question number.
+- [X] Make a prop on `<NextQuestion />` to pass the prop down to the button element to call that function when the button is clicked.
+- [X] Check that every part of your question and answer updates to reflect the current question number.
+- [X] Reset the state of `isAnswered` when the Next Question button is clicked so the correct answer stops being displayed.
+- [X] BONUS: Add [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to hide `<NextQuestion />` when there are no more next questions.
 
 > ![Day 3.0 goal](https://i.imgur.com/fetraPF.png) >![Day 3.0 with bonus](https://i.imgur.com/GruM8g2.png)
 
 ### Goal 2: Add functionality so that when the user clicks on an answer choice, the correct answer appears.
 
-- [ ] Using `useState` in `<App />`, create a state variable to keep track of which answer choice the user clicks.
-  - [ ] Inside the map function for the Answer components, add an event handler that updates the state to be the choice that the user clicks.
-  - [ ] HINT: Use props to pass down the state from `<App />`.
-  - [ ] HINT: Don't forget to pass your `onClick` down as a prop as well.
-- [ ] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
-  - [ ] Display text on the screen telling the user if their answer choice was correct.
-  - [ ] Display text on the screen telling the user what the correct answer was.
-  - [ ] HINT: To do this, you should create a variable and display that variable inside your return statement.
-  - [ ] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
+- [X] Using `useState` in `<App />`, create a state variable to keep track of which answer choice the user clicks.
+  - [X] Inside the map function for the Answer components, add an event handler that updates the state to be the choice that the user clicks.
+  - [X] HINT: Use props to pass down the state from `<App />`.
+  - [X] HINT: Don't forget to pass your `onClick` down as a prop as well.
+- [X] Inside `<App />` (below state and above return), write a conditional that checks if the answer clicked is the correct answer.
+  - [X] Display text on the screen telling the user if their answer choice was correct.
+  - [X] Display text on the screen telling the user what the correct answer was.
+  - [-] HINT: To do this, you should create a variable and display that variable inside your return statement.
+  - [-] BONUS: Use [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of string concatenation.
 
 ### Goal 3: Sort your Trivia app into separate files and import/export the components.
 
-- [ ] Create a new `.js` file inside the components folder for each of your components.
-- [ ] Move the code for your components into their new files.
-- [ ] Add an export to each of your components.
-- [ ] Import all of your components into the correct files.
+- [X] Create a new `.js` file inside the components folder for each of your components.
+- [X] Move the code for your components into their new files.
+- [X] Add an export to each of your components.
+- [X] Import all of your components into the correct files.
 
 > ![Day 3.5 correct](https://i.imgur.com/HC7M6LH.png) >![Day 3.5 wrong](https://i.imgur.com/DWQu3bb.png)
 

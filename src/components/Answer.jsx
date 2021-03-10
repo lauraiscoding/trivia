@@ -5,8 +5,10 @@ function Answer(props) {
   // map1 = array1.map(x => <p>{x}</p>);
   return (
     <div>
-      {props.choice.map((x) => (
-        <div>{x}</div>
+      {props.choice.map((x,index) => (
+       <div> <button onClick={() => {
+        props.setUserAnswer(index)
+      }} > {x}</button> </div>
       ))}
     </div>
   );
