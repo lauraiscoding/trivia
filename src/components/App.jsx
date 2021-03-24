@@ -16,6 +16,7 @@ function NextQuestion(props) {
 
         // Reset the current answer
         props.setCorrectAnswer(null);
+        props.setUserAnswer(null);
       }}
     >
       Next question
@@ -30,15 +31,10 @@ function App() {
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [userAnswer, setUserAnswer] = useState(null);
   
-
+const correctIndex = data[questionNumber].question.correct_choice_index;
   return (
+  
     <div className="app">
-     <div> {userAnswer === data[questionNumber].question.correct_choice_index ?
-        "Your answer is correct!"
-          : userAnswer !== null ?
-           "Wrong answer! Click the button if you want the correct answer"
-          : ""
-    } </div>
       
       <Question
         text={data[questionNumber].question.text}
@@ -55,12 +51,32 @@ function App() {
           answer={element.question.correct_choice_index}
         />
       ))} */}
+ <div> {userAnswer === correctIndex ?
+        "Your answer is correct!"
+          : userAnswer !== null ?
+           `Wrong answer! The right answer is ${data[questionNumber].question.choices[correctIndex]}`
+          : ""
+    } </div>
 
-      <NextQuestion
+     { userAnswer !== null ?
+     <NextQuestion
         setQuestion={setQuestionNumber}
         currentQuestion={questionNumber}
         setCorrectAnswer={setCorrectAnswer}
+        setUserAnswer={setUserAnswer}
       />
+        : null
+        
+        }
+{//if user is on last question and answered it, 
+ // then render a reset button
+ questionNumber > data.length -2 && userAnswer !== null ?
+  <button onClick={ () => {
+    //reset game here
+  }}
+  >Play again?</button>
+    : null
+}
     </div>
   );
 }

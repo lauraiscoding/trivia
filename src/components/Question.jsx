@@ -8,14 +8,14 @@ function Question(props) {
       {props.text}
       <Answer 
     choice={props.choice} setUserAnswer={props.setUserAnswer}/>
-      <button
+      {/*<button
         onClick={() => {
           props.setCorrectAnswer(props.choice[props.answer]);
         }}
       >
         Click for correct answer
       </button>
-      <p>The correct answer is {props.correctAnswer}</p>
+      <p>The correct answer is {props.correctAnswer}</p>*/}
     </div>
   );
 }
