@@ -17,3 +17,7 @@ border-width: 5px;
 border-color: white;
 background-color: pink;
 }
+
+button.correct-answer{
+background-color: green;
+}

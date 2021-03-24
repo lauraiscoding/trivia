@@ -6,7 +6,12 @@ function Answer(props) {
   return (
     <div>
       {props.choice.map((x,index) => (
-       <div> <button onClick={() => {
+       <div> <button className= { props.userAnswer !== null && props.correctIndex === index ?
+         "correct-answer" 
+          : ""
+        }
+       
+       onClick={() => {
         props.setUserAnswer(index)
       }} > {x}</button> </div>
       ))}

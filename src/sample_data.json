@@ -38,6 +38,21 @@
       "text": "Delaware is...",
       "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
     }
+  },
+  {
+    "question": {
+      "choices": ["A longbow", "Bagpipes", "A claymore", "All of the above"],
+      "correct_choice_index": 3,
+      "text": "During WW2, Jack Churchill carried...",
+      "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
+    }
+  },
+  {
+    "question": {
+      "choices": ["20", "8", "Moose can't swim!", "10"],
+      "correct_choice_index": 0,
+      "text": "How many feet can moose dive underwater?",
+      "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
+    }
   }
-
 ]
